@@ -9,7 +9,7 @@ let userString = '';
 let pageNumber = 1;
 moreButton.style.opacity = '0';
 var lightbox = new SimpleLightbox('.gallery a');
-
+//
 async function fetching(value) {
   return await fetch(
     `https://pixabay.com/api/?key=28343254-7f5bc0b854f6ee91fb4d58501&q=${value}&image_type=photo&page=${pageNumber}&per_page=40&orientation=horizontal&safesearch=true`
