@@ -56,7 +56,7 @@ async function search(event) {
   moreButton.style.opacity = '0';
   const response = await fetching(userString);
   if (response.totalHits != 0) {
-    await addingPics(response.hits);
+    addingPics(response.hits);
     lightbox.refresh();
     Notiflix.Notify.success(`Hooray! We found ${response.totalHits} images.`);
     moreButton.style.opacity = '1';
